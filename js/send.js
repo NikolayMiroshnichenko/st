@@ -35,7 +35,7 @@ const sendEmail = (event) => {
     const phone = event.srcElement.phone.value;
     const data = genereteString(name, phone);
 
-    fetch("https://angency.protargeting.team/aerock/send.php", {
+    fetch(`${document.location.href.substr(0, document.location.href.length - 11)}/send.php`, {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",

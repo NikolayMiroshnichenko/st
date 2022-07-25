@@ -532,6 +532,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 968px) {
@@ -789,5 +790,67 @@ body {
   width: 30px;
   height: 30px;
   fill: #eaeaea;
+}
+
+.modalWrapp {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.modalWrapp .modalWrappOvrlay {
+  width: 375px;
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.modalWrapp .modalWrappOvrlay .modalWrappOvrlay_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modalWrapp .modalWrappOvrlay .modalWrappOvrlay_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modalWrapp .modalWrappOvrlay .modal-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.modalWrapp .modalWrappOvrlay .modal-form button {
+  outline: none;
+  display: block;
+  width: 160px;
+  margin: 20px auto 0 auto;
+  padding: 8px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #6cbd00;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
